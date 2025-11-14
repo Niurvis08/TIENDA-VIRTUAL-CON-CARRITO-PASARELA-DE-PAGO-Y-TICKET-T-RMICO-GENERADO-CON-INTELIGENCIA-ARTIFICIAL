@@ -1,0 +1,80 @@
+/* Importar la fuente Roboto */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+/* Estilos Generales y Paleta de Colores */
+body {
+    font-family: 'Roboto', sans-serif; /* Tipografía */
+    background-color: #f8f9fa; /* Fondo: Blanco suave */
+    color: #343A40; /* Texto: Gris oscuro */
+}
+
+/* Color primario (Azul Eléctrico) y secundario (Verde Éxito) */
+.bg-primary, .btn-primary {
+    background-color: #007BFF !important; /* Confianza y Acción */
+}
+.btn-success, .text-success {
+    background-color: #28A745 !important; /* Éxito y Compra */
+    border-color: #28A745 !important;
+}
+
+/* Margen para evitar que el contenido quede detrás del navbar fijo */
+main {
+    padding-top: 70px;
+}
+
+/* Estilo para las cards de productos */
+.card {
+    transition: transform 0.3s ease-in-out;
+    border: 1px solid #dee2e6;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Animación suave al pasar el mouse */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 200px;
+    object-fit: contain; /* Para que la imagen se vea completa sin deformarse */
+    padding: 15px;
+    background-color: #fff;
+    border-bottom: 1px solid #f8f9fa;
+}
+
+.card-title {
+    height: 3em; /* Limita la altura del título para uniformidad */
+    overflow: hidden;
+}
+
+/* Estilo para el botón "Ver más" */
+.btn-outline-primary {
+    color: #007BFF;
+    border-color: #007BFF;
+}
+.btn-outline-primary:hover {
+    background-color: #007BFF;
+    color: white;
+}
+
+/* Estilos para el Offcanvas del Carrito */
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Estilos para los items dentro del carrito */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.cart-item-details {
+    flex-grow: 1;
+    margin-right: 15px;
+}
